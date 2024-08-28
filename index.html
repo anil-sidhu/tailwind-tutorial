@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Tailwind css setup with CLI</title>
+    <title>How Tailwind CSS Work</title>
     <link rel="stylesheet" href="./output.css">
 </head>
+
 <body>
-    <h1 class="bg-black text-white text-9xl m-4">Hello World !</h1>
-    <button class="bg-blue-600 m-4 p-2 text-white text-1xl rounded hover:bg-blue-900">Button</button>
+    <ul class="bg-black text-white m-0 flex [&>*]:flex">
+        <li><a class="p-3 hover:bg-zinc-900" href="#">Home</a></li>
+        <li><a class="p-3  hover:bg-zinc-900" href="#">News</a></li>
+        <li><a class="p-3  hover:bg-zinc-900" href="#">Contact</a></li>
+        <li"><a class="p-3  hover:bg-zinc-900" href="#">About</a></li>
+
+
+
+    </ul>
 </body>
+
 </html>
