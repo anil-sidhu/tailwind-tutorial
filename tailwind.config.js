@@ -2,17 +2,18 @@
 module.exports = {
   content: ["*"],
   theme: {
-   
+
     extend: {
-      screens:{
-        kt:'600px',
-        md:'800px',
-        lg:'1100px',
-        xl:'1200px',
-      },
+      spacing: {
+        '21': '6rem',
+        '22': '3rem',
+        '13':'13px',
+        'px-8':'8px',
+        'px-100':'100px'
+      }
     },
-    container:{
-      center:true
+    container: {
+      center: true
     }
   },
   plugins: [],
