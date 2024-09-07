@@ -1,16 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="root" class="">
+
 <head>
     <title>Dark Mode with Tailwind CSS</title>
     <link rel="stylesheet" href="output.css">
+    <script>
+        function changeMode() {
+            let el = document.getElementById('root');
+            if (el.className == 'dark') {
+                document.getElementById('root').className = "light"
+                document.getElementById('select-mode').innerText="Apply Dark Mode"
+            } else {
+                
+                document.getElementById('select-mode').innerText="Apply Light Mode"
+                
+                document.getElementById('root').className = "dark"
+            }
+
+        }
+    </script>
 </head>
+
 <body>
+    <button id="select-mode" class="border border-slate-800 m-2 p-2  rounded hover:bg-slate-100
+     dark:bg-slate-900 dark:text-white" onclick="changeMode()">Apply Dark
+        Mode</button>
     <div class="dark:bg-slate-800">
         <h1 class="text-7xl dark:text-white">
             Dark Mode Test with Tailwind css
         </h1>
         <p class="text-4xl  dark:text-white">
-          Code Step By Step  
+            Code Step By Step
         </p>
     </div>
 
@@ -19,8 +39,9 @@
 
         </div>
         <p class="text-2xl ml-10 p-2 text-white">
-          Box with Dark Mode  
+            Box with Dark Mode
         </p>
     </div>
 </body>
+
 </html>
