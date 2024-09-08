@@ -1,3 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* @layer base{
+   h1{
+    font-size: 50px;
+   } 
+   h2{
+      font-size: 40px;
+   }
+   h3{
+      font-size: 30px;
+   }
+   button{
+      border:1px solid #999;
+      padding: 3px;
+   }
+
+} */
+
+@layer base {
+   h1 {
+      @apply text-8xl;
+   }
+
+   h2 {
+      @apply text-7xl;
+   }
+
+   h3 {
+      @apply text-4xl;
+   }
+
+   button {
+      @apply border;
+      @apply p-1;
+      @apply text-2xl;
+
+   }
+}
+
+@layer components {
+   .btn-blue {
+      @apply bg-blue-500 text-white p-2 hover:bg-blue-800
+   }
+}
