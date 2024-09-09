@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components{
+   .btn-primary{
+      @apply bg-blue-500 rounded text-white p-2 hover:bg-blue-700
+   }
+   .bg-background-blue{
+      @apply bg-blue-600 p-2 m-2
+   }
+}
+
