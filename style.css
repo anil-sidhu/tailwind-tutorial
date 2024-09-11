@@ -1,9 +1,6 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer components{
-   .img-gallery{
-      @apply w-80 rounded border-2 border-blue-300 hover:border-2 hover:border-blue-100 hover:scale-110 transition duration-1000 hover:brightness-125
-   }
-}
