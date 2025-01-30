@@ -2,11 +2,78 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Tailwind css setup with CLI</title>
+   <title>Google Clone</title>
     <link rel="stylesheet" href="./output.css">
+    <link rel="icon" href="./favicon.ico"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
-    <h1 class="bg-black text-white text-9xl m-4">Hello World !</h1>
-    <button class="bg-blue-600 m-4 p-2 text-white text-1xl rounded hover:bg-blue-900">Button</button>
+
+<body class="bg-white font-open">
+   <header class="flex justify-between text-[14px]">
+    <div class="flex p-5 text-center justify-start">
+       <div class=" flex space-x-3">
+        <a href="" class="text-gray-900 hover:underline">About</a>
+        <a href="" class="text-gray-900 hover:underline">Store</a>
+       </div>
+    </div>
+    <div class="flex p-4 text-center justify-start">
+        <div class=" flex space-x-3">
+         <a href="" class="text-gray-900 hover:underline">Gmail</a>
+         <a href="" class="text-gray-900 hover:underline">Images</a>
+         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#434343"><path d="M200-120q-51 0-72.5-45.5T138-250l222-270v-240h-40q-17 0-28.5-11.5T280-800q0-17 11.5-28.5T320-840h320q17 0 28.5 11.5T680-800q0 17-11.5 28.5T640-760h-40v240l222 270q32 39 10.5 84.5T760-120H200Zm0-80h560L520-492v-268h-80v268L200-200Zm280-280Z"/></svg>
+         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#434343"><path d="M240-160q-33 0-56.5-23.5T160-240q0-33 23.5-56.5T240-320q33 0 56.5 23.5T320-240q0 33-23.5 56.5T240-160Zm240 0q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm240 0q-33 0-56.5-23.5T640-240q0-33 23.5-56.5T720-320q33 0 56.5 23.5T800-240q0 33-23.5 56.5T720-160ZM240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400ZM240-640q-33 0-56.5-23.5T160-720q0-33 23.5-56.5T240-800q33 0 56.5 23.5T320-720q0 33-23.5 56.5T240-640Zm240 0q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Zm240 0q-33 0-56.5-23.5T640-720q0-33 23.5-56.5T720-800q33 0 56.5 23.5T800-720q0 33-23.5 56.5T720-640Z"/></svg>
+         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#434343"><path d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q53 0 100-15.5t86-44.5q-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160Zm0-360q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0-60Zm0 360Z"/></svg>
+        </div>
+     </div>
+   </header>
+   <main class="flex items-center justify-center flex-col">
+    <img class="h-24 mb-8" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="">
+    <div class="w-full max-w-[37rem]">
+        <div class="relative">
+            <input type="text" class="w-full border bg-gray-100 rounded-full py-3 px-5">
+            <svg class="left-3 top-3 absolute" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#434343"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+            <svg class="right-12 top-3 absolute" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#434343"><path d="M480-400q-50 0-85-35t-35-85v-240q0-50 35-85t85-35q50 0 85 35t35 85v240q0 50-35 85t-85 35Zm0-240Zm-40 520v-123q-104-14-172-93t-68-184h80q0 83 58.5 141.5T480-320q83 0 141.5-58.5T680-520h80q0 105-68 184t-172 93v123h-80Zm40-360q17 0 28.5-11.5T520-520v-240q0-17-11.5-28.5T480-800q-17 0-28.5 11.5T440-760v240q0 17 11.5 28.5T480-480Z"/></svg>
+            <svg class="right-3 top-3 absolute" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#434343"><path d="M200-120q-33 0-56.5-23.5T120-200v-160h80v160h160v80H200Zm400 0v-80h160v-160h80v160q0 33-23.5 56.5T760-120H600ZM120-600v-160q0-33 23.5-56.5T200-840h160v80H200v160h-80Zm640 0v-160H600v-80h160q33 0 56.5 23.5T840-760v160h-80ZM480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280Zm0-80q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Zm0-120Z"/></svg>
+        </div>
+    </div> 
+    <div class="flex justify-center space-x-4 mt-5 text-[14px]">
+        <button class="bg-gray-50 hover:bg-gray-200 text-gray-700 rounded py-2 px-4">Google Search</button>
+        <button class="bg-gray-50 hover:bg-gray-200 text-gray-700 rounded py-2 px-4">I'm Felling Lucky</button>
+    </div> 
+    <div class="flex justify-between text-[13px]">
+        <div class="flex p-4 text-center justify-start">
+           <div class=" flex space-x-3">
+            <span>Google offered in</span>
+            <a href="" class="text-blue-700 hover:underline">हिन्दी</a>
+            <a href="" class="text-blue-700 hover:underline">বাংলা</a>
+            <a href="" class="text-blue-700 hover:underline">తెలుగు </a>
+            <a href="" class="text-blue-700 hover:underline">मराठी</a>
+            <a href="" class="text-blue-700 hover:underline">ગુજરાતી</a>
+            <a href="" class="text-blue-700 hover:underline">ಕನ್ನಡ </a>
+            <a href="" class="text-blue-700 hover:underline">മലയാളം </a>
+            <a href="" class="text-blue-700 hover:underline">ਪੰਜਾਬੀ </a>           
+           </div>
+        </div>
+        </div> 
+</main>
+<footer class="bg-gray-100 absolute bottom-0 w-full text-gray-700 px-5 text-[14]">
+<div>
+    <div class="border-b border-gray-200 py-2">India</div>
+    <div class="flex justify-between py-3">
+        <ul class="flex space-x-4">
+            <li><a href="">Advertising</a></li>
+            <li><a href="">Businesses</a></li>
+            <li><a href="">How Search Works</a></li>
+
+        </ul>
+        <ul class="flex space-x-4">
+            <li><a href="">Privacy</a></li>
+            <li><a href="">Terms</a></li>
+            <li><a href="">Setting</a></li>
+
+        </ul>
+    </div>
+</div>
+</footer>
 </body>
 </html>
